@@ -1,4 +1,4 @@
-# Radio1 Cli
+# [Radio1 Cli](https://crates.io/crates/radio1-cli)
 
 ## Most important
 - Type "radio1-cli" and hit enter to run it
