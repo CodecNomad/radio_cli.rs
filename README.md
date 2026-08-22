@@ -19,6 +19,6 @@ prefetch = 0
 # User agent, worth having because they usually block without one
 software_ua_header = "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0"
 
-# Any Shoutcast works (aka something that keeps downloading the file)
+# Any Shoutcast / Icecast works as long as it uses mp3
 mp3_stream_url = "https://icast.connectmedia.hu/5201/live.mp3
 ```
