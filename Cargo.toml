@@ -1,0 +1,28 @@
+[package]
+name = "radio1-cli"
+version = "0.1.8"
+edition = "2024"
+description = "Listen to Radio 1 (hu) from your cli (fan made)"
+license = "MIT"
+repository = "https://github.com/CodecNomad/radio_cli.rs"
+keywords = ["radio", "cli", "terminal", "magyar", "radio1"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+stream-download = { version = "0.24.3", features = [
+  "temp-storage",
+  "reqwest-middleware",
+] }
+tokio = { version = "1.49.0", features = ["rt-multi-thread"] }
+rodio = "0.21.1"
+reqwest-middleware = "0.5.1"
+async-trait = "0.1.89"
+http = "1.4.0"
+reqwest = { version = "0.13.2", features = ["rustls"] }
+rustyline = "18.0.1"
+confy = "2.0.0"
+serde = { version = "1.0.228", features = ["derive"] }
+
+[[bin]]
+name = "radio1_cli"
+path = "src/main.rs"
